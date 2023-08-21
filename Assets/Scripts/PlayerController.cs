@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
             //Debug.Log("Finger moved");
             touchX = Input.GetTouch(0).deltaPosition.x / Screen.width;  //ekraný kaydýrdýðýmýzda gelen x deðeri
         }
+        else
+        {
+            touchX = 0;
+        }
         newX = transform.position.x + xSpeed * touchX * Time.deltaTime; //yeni x: karakter pozisyonu kaydýrdýðýmýzda gelen x deðeri * speed
         newX = Mathf.Clamp(newX, -limitX, limitX); //karakterin platformun dýþýna çýkmamasý için x deðerini limitleme
         Vector3 newPosition = new Vector3(newX, transform.position.y, transform.position.z + runningSpeed * Time.deltaTime); //z ekseninde running speed hýzýyla koþmasý

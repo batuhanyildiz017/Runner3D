@@ -19,6 +19,7 @@ public class Coin : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
     void AddCoin()
     {
         score++;

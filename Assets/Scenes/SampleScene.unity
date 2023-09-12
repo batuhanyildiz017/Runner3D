@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 707301590}
   - component: {fileID: 707301588}
   - component: {fileID: 707301591}
+  - component: {fileID: 707301592}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -399,6 +400,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2091805268}
+--- !u!114 &707301592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707301586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d13dc42c41e37743a5107e87f4b3e50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,6 +521,38 @@ MonoBehaviour:
   speed: 6
   dist: {x: 0, y: 3.7, z: -6}
   lookTarget: {fileID: 707301587}
+--- !u!1 &1012310999 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4143342752619085814, guid: 18b8f4b742d787f41beaa8bf06716639, type: 3}
+  m_PrefabInstance: {fileID: 8646179684636897479}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1012311002
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012310999}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1065758407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1171,5 +1216,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4143342752619085814, guid: 18b8f4b742d787f41beaa8bf06716639, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1012311002}
   m_SourcePrefab: {fileID: 100100000, guid: 18b8f4b742d787f41beaa8bf06716639, type: 3}

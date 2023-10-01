@@ -12,11 +12,6 @@ public class Obstacle : MonoBehaviour
         {
             Debug.Log("Engele temas etti.");
             gameManager.LoadScene();
-        } else if (other.CompareTag("End"))
-        {
-            Debug.Log("Sona geldik.");
-            controller.runningSpeed = 0;
-            
         }
     }
 }
